@@ -1,0 +1,10 @@
+!.gitignore
+*.class
+*/classes/
+*.classes
+classes/
+*.iml
+*.ipr
+*.iws
+*/target
+*/target/*
