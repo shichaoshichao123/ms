@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  * 在Java中使用Executor接口来定义线程池的最顶层接口
  * 线程池的底层就是ThreadPoolExecutor
  * Executors 是一个线程池的辅助工具类，用于对线程池的辅助操作
- *
+ * <p>
  * 线程池的七大基本参数：
  * 1：corePoolSize：线程池核心线程数量，也就是线程池的最初始化的核心线程数。
  * 2：maximumPoolSize：线程池能容纳最多线程数，也就是线程池满负荷下最大线程数，在核心线程被占满了并且工作队列也满了的情况下或进行线程扩容直到数量到Max。
@@ -20,10 +20,21 @@ import java.util.concurrent.TimeUnit;
  * 5：workQueue：提交到线程池的工作队列，该队列是一个阻塞队列（候客区）。
  * 6：threadFactory：线程工厂类用于生产工作线程的，一般用默认的参数就行。
  * 7：handler：线程池满后的拒绝策略用于线程池在最大线程数下运行并且阻塞队列也满了的情况下的处理方式。
- *
+ * <p>
  * 线程池底层工作原理：
- *  基于7大参数进行理解（基于银行柜台办理业务去理解）
- *  要注意的是核心数满了之后新进入的任务是放在等待队列中的等待队列满了之后才进行线程扩容到最大线程数
+ * 基于7大参数进行理解（基于银行柜台办理业务去理解）
+ * 要注意的是核心数满了之后新进入的任务是放在等待队列中的等待队列满了之后才进行线程扩容到最大线程数
+ * <p>
+ * 线程池JDK提供的四大拒绝策略：
+ * 1：AbortPolicy 直接向外抛出异常，这是默认策略。
+ * 2：CallerRunsPolicy 将任务原路会退给原先调用线程,让调用者运行。
+ * 3：DiscardOldestPolicy 从等待队列中丢弃等待时间最长的任务，以接纳新任务。
+ * 4：DiscardPolicy 直接将新任务抛弃。
+ * <p>
+ * 如何配置线程池的合理数量，是如何考虑的：
+ * 考虑因素数： 1：看业务是CPU密集型，还是IO密集型。如果是CUP密集型配：cup核心数+1 ，
+ * 如果是IO密集型两种情况：1：由于不会出现高频的上下午切换 所以可以多设置 一般公式 CPU/（1-0.9）0.9为阻塞系数 2：
+ * 2：考虑服务器硬件核心数。
  */
 public class ThreadPoolDemo {
 
@@ -33,6 +44,7 @@ public class ThreadPoolDemo {
         // 创建单线程数的线程池 一池一线程 适合单一线程
         //ExecutorService executorService = Executors.newSingleThreadExecutor();
         //创建根据情况新建的线程数的池 一次N线程 适合短期异步时间段的任务
+
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         try {
