@@ -23,6 +23,7 @@ import java.util.concurrent.TimeUnit;
  *
  * 线程池底层工作原理：
  *  基于7大参数进行理解（基于银行柜台办理业务去理解）
+ *  要注意的是核心数满了之后新进入的任务是放在等待队列中的等待队列满了之后才进行线程扩容到最大线程数
  */
 public class ThreadPoolDemo {
 
