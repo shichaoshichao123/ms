@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/OutOfMemoryDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/StackOverflowDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,11 +15,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BlockingQueueDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/BlockingQueueDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JvmParamsDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/JvmParamsDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="32" column="23" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -36,11 +54,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WeakHashMapDemo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/WeakHashMapDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="242">
+              <caret line="99" column="76" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -60,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutOfMemoryDemo.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OutOfMemoryDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/OutOfMemoryDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1294">
-              <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+            <state relative-caret-position="266">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#214#215#0" expanded="true" />
@@ -83,38 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OutOfMemoryError.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/OutOfMemoryError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GcDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/GcDemo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VirtualMachineError.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/VirtualMachineError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StackOverflowError.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/StackOverflowError.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="35" column="33" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -186,8 +189,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/ReferenceQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/StackOverflowDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/OutOfMemoryDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt" />
       </list>
     </option>
   </component>
@@ -299,8 +302,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="gc" type="462c0819:PsiDirectoryNode" />
-              <item name="OutOfMemoryDemo" type="1a9f42e2:ClassTreeNode" />
+              <item name="jvm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -311,6 +313,17 @@
               <item name="ms" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
               <item name="jvm" type="462c0819:PsiDirectoryNode" />
+              <item name="WeakHashMapDemo" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="ms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ms" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
+              <item name="BlockingQueueDemo" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -548,12 +561,12 @@
       <workItem from="1556156109188" duration="3254000" />
       <workItem from="1556176459562" duration="10193000" />
       <workItem from="1556268690319" duration="29528000" />
-      <workItem from="1556536551307" duration="6530000" />
+      <workItem from="1556536551307" duration="13245000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78677000" />
+    <option name="totallyTimeSpent" value="85392000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -569,12 +582,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24438903" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24438903" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23067331" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.17830424" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -655,6 +668,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5757">
           <caret line="352" column="32" selection-start-line="352" selection-start-column="32" selection-end-line="352" selection-end-column="32" />
+          <folding>
+            <element signature="e#6812#6813#0" expanded="true" />
+            <element signature="e#6849#6850#0" expanded="true" />
+            <element signature="e#9697#9698#0" expanded="true" />
+            <element signature="e#9732#9733#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -813,13 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/BlockingQueueDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/sctp/thread/ThreadDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -862,16 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/WeakHashMapDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="52" selection-start-line="8" selection-start-column="52" selection-end-line="8" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/deadlock/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -886,13 +888,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="45" column="58" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -917,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/GCRootDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/JvmParamsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -945,6 +933,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/OutOfMemoryDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#214#215#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/GCRootDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/StackOverflowDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -958,22 +972,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/BlockingQueueDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="291">
+          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/OutOfMemoryDemo.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/WeakHashMapDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1294">
-          <caret line="106" column="9" lean-forward="true" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+        <state relative-caret-position="204">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#301#302#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="99" column="76" selection-start-line="99" selection-start-column="76" selection-end-line="99" selection-end-column="76" />
         </state>
       </provider>
     </entry>
