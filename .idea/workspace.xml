@@ -60,8 +60,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="356">
-              <caret line="129" column="71" selection-start-line="129" selection-start-column="71" selection-end-line="129" selection-end-column="71" />
+            <state relative-caret-position="471">
+              <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -561,12 +561,12 @@
       <workItem from="1556156109188" duration="3254000" />
       <workItem from="1556176459562" duration="10193000" />
       <workItem from="1556268690319" duration="29528000" />
-      <workItem from="1556536551307" duration="15280000" />
+      <workItem from="1556536551307" duration="15593000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87427000" />
+    <option name="totallyTimeSpent" value="87740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -584,10 +584,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24438903" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29800498" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.29800498" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -994,8 +994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="129" column="71" selection-start-line="129" selection-start-column="71" selection-end-line="129" selection-end-column="71" />
+        <state relative-caret-position="471">
+          <caret line="139" column="8" selection-start-line="139" selection-start-column="8" selection-end-line="139" selection-end-column="8" />
         </state>
       </provider>
     </entry>
