@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/B+Tree.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/BTree1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/BTree2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/MVCC.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/密集索引.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/database/索引最左匹配原则.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/redis/readme.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,11 +16,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/database/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2299">
-              <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="342">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/redis/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -71,11 +74,6 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="BTree1.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/database/BTree1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
       <file leaf-file-name="BTree2.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/database/BTree2.jpg">
           <provider selected="true" editor-type-id="images" />
@@ -113,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/netty/socket/ServerHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/netty/socket/NettyServer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/VolatileDemo.java" />
@@ -164,6 +161,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/jvm/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/network/http/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/database/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/redis/readme.txt" />
       </list>
     </option>
   </component>
@@ -245,7 +243,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -477,12 +475,12 @@
       <workItem from="1556536551307" duration="15593000" />
       <workItem from="1557019692789" duration="3074000" />
       <workItem from="1557041335063" duration="15035000" />
-      <workItem from="1557391864177" duration="13142000" />
+      <workItem from="1557391864177" duration="13490000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118991000" />
+    <option name="totallyTimeSpent" value="119339000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -531,13 +529,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/lang/OutOfMemoryError.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="40" column="43" lean-forward="true" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/JvmParamsDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -875,8 +866,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/database/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" lean-forward="true" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="342">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/redis/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
