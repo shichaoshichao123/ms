@@ -115,8 +115,76 @@ JVM相关知识的复盘
      这样一来，岂不是又做了一次全堆扫描呢？
      卡表
      HotSpot 给出的解决方案是一项叫做卡表（Card Table）的技术。该技术将整个堆划分为一个个大小为 512 字节的卡，并且维护一个卡表，用来存储每张卡的一个标识位。这个标识位代表对应的卡是否可能存有指向新生代对象的引用。如果可能存在，那么我们就认为这张卡是脏的。
-
      在进行 Minor GC 的时候，我们便可以不用扫描整个老年代，而是在卡表中寻找脏卡，并将脏卡中的对象加入到 Minor GC 的 GC Roots 里。当完成所有脏卡的扫描之后，Java 虚拟机便会将所有脏卡的标识位清零。
-
      由于 Minor GC 伴随着存活对象的复制，而复制需要更新指向该对象的引用。因此，在更新引用的同时，我们又会设置引用所在的卡的标识位。这个时候，我们可以确保脏卡中必定包含指向新生代对象的引用。
 
+    11:java 提供的三种锁机制：
+
+    今天我介绍了 Java 虚拟机中 synchronized 关键字的实现，按照代价由高至低可分为重量级锁、轻量级锁和偏向锁三种。
+
+    重量级锁会阻塞、唤醒请求加锁的线程。它针对的是多个线程同时竞争同一把锁的情况。Java 虚拟机采取了自适应自旋，来避免线程在面对非常小的 synchronized 代码块时，仍会被阻塞、唤醒的情况。
+
+    轻量级锁采用 CAS 操作，将锁对象的标记字段替换为一个指针，指向当前线程栈上的一块空间，存储着锁对象原本的标记字段。它针对的是多个线程在不同时间段申请同一把锁的情况。
+
+    偏向锁只会在第一次请求时采用 CAS 操作，在锁对象的标记字段中记录下当前线程的地址。在之后的运行过程中，持有该偏向锁的线程的加锁操作将直接返回。它针对的是锁仅会被同一线程持有的情况。
+
+    12:java 范型擦除：
+        java代码经过编译器变异之后的范性都会被擦除，如果没有定义范型的上限类型那将会被编译成Object，如果制定了上限类型就会被虚拟机转化为上限类型。
+
+        类型擦除带来的问题：方法重写的问题。
+        泛型的类型擦除带来了不少问题。其中一个便是方法重写。在第四篇的课后实践中，我留了这么一段代码：
+
+        class Merchant<T extends Customer> {
+          public double actionPrice(T customer) {
+            return 0.0d;
+          }
+        }
+
+        class VIPOnlyMerchant extends Merchant<VIP> {
+          @Override
+          public double actionPrice(VIP customer) {
+            return 0.0d;
+          }
+        }
+        VIPOnlyMerchant 中的 actionPrice 方法是符合 Java 语言的方法重写的，毕竟都使用 @Override 来注解了。然而，经过类型擦除后，父类的方法描述符为 (LCustomer;)D，而子类的方法描述符为 (LVIP;)D。这显然不符合 Java 虚拟机关于方法重写的定义。
+
+        解决方式：通过jvm虚拟机生成的桥接方法应用于调用范型擦除之后的子类方法。
+        为了保证编译而成的 Java 字节码能够保留重写的语义，Java 编译器额外添加了一个桥接方法。该桥接方法在字节码层面重写了父类的方法，并将调用子类的方法。
+
+        class VIPOnlyMerchant extends Merchant<VIP>
+        ...
+          public double actionPrice(VIP);
+            descriptor: (LVIP;)D
+            flags: (0x0001) ACC_PUBLIC
+            Code:
+                 0: dconst_0
+                 1: dreturn
+
+          public double actionPrice(Customer);
+            descriptor: (LCustomer;)D
+            flags: (0x1041) ACC_PUBLIC, ACC_BRIDGE, ACC_SYNTHETIC
+            Code:
+                 0: aload_0
+                 1: aload_1
+                 2: checkcast class VIP
+                 5: invokevirtual actionPrice:(LVIP;)D
+                 8: dreturn
+
+        // 这个桥接方法等同于
+        public double actionPrice(Customer customer) {
+          return actionPrice((VIP) customer);
+        }
+        在我们的例子中，VIPOnlyMerchant 类将包含一个桥接方法 actionPrice(Customer)，它重写了父类的同名同方法描述符的方法。该桥接方法将传入的 Customer 参数强制转换为 VIP 类型，再调用原本的 actionPrice(VIP) 方法。
+        当一个声明类型为 Merchant，实际类型为 VIPOnlyMerchant 的对象，调用 actionPrice 方法时，字节码里的符号引用指向的是 Merchant.actionPrice(Customer) 方法。Java 虚拟机将动态绑定至 VIPOnlyMerchant 类的桥接方法之中，并且调用其 actionPrice(VIP) 方法。
+        需要注意的是，在 javap 的输出中，该桥接方法的访问标识符除了代表桥接方法的 ACC_BRIDGE 之外，还有 ACC_SYNTHETIC。它表示该方法对于 Java 源代码来说是不可见的。当你尝试通过传入一个声明类型为 Customer 的对象作为参数，调用 VIPOnlyMerchant 类的 actionPrice 方法时，Java 编译器会报错，并且提示参数类型不匹配。
+
+    13:JVM即时编译：这是一项用于提高代码执行速度的技术，刚开始虚拟机中的代码是通过解释执行的但当某段代码被调用的次数（以及循环回边执行次数（OSR编译））超过一定阀值的时候（可以认为调整）虚拟机就会通过即时编译技术将该段代码直接编译成机器码运行在硬件之上从而提高了运行速度。
+        即时编译器有：C1，C2，Graal（实验性质的）
+        C1（编译效率较快）：用于执行时间短，对启动性能有要求的情况下使用。-client
+        C2（生成代码执行效率块）：执行时间长，或者对峰值性能有要求的情况下使用。-server
+
+        目前主要主流的是使用分层编译的方式（对C1和C2进行分层），使用了分层编译之后原先设置的阀值就不生效，而是虚拟机本身动态来调整。
+
+    14：Java 虚拟机的 profiling 以及基于所收集的数据的优化和去优化。
+        profile文件搜集用于进行编译器优化。
+        即时编译器会进行预测优化，当程序没有按照预测的分支执行，那虚拟机就通过去优化的方式从编译执行切换回解释执行
