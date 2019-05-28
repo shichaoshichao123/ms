@@ -205,3 +205,78 @@ JVM相关知识的复盘
 
     方法内联有许多规则。除了一些强制内联以及强制不内联的规则外，即时编译器会根据方法调用的层数、方法调用指令所在的程序路径的热度、目标方法的调用次数及大小，以及当前 IR 图的大小来决定方法调用能否被内联。
 
+
+  16:Java对象的逃逸分析：
+  总结与实践
+  今天我介绍了 Java 虚拟机中即时编译器的逃逸分析，以及基于逃逸分析的优化。
+
+  在 Java 虚拟机的即时编译语境下，逃逸分析将判断新建的对象是否会逃逸。即时编译器判断对象逃逸的依据有两个：一是看对象是否被存入堆中，二是看对象是否作为方法调用的调用者或者参数。
+
+  即时编译器会根据逃逸分析的结果进行优化，如锁消除以及标量替换。后者指的是将原本连续分配的对象拆散为一个个单独的字段，分布在栈上或者寄存器中。
+
+  部分逃逸分析是一种附带了控制流信息的逃逸分析。它将判断新建对象真正逃逸的分支，并且支持将新建操作推延至逃逸分支。
+
+
+  17:Jvm注解处理器
+
+    java虚拟机加载流程：
+    如上图所示 出处 [1]，Java 源代码的编译过程可分为三个步骤：
+
+    1：将源文件解析为抽象语法树；
+    2：调用已注册的注解处理器；
+    3：生成字节码。
+    如果在第 2 步调用注解处理器过程中生成了新的源文件，那么编译器将重复第 1、2 步，解析并且处理新生成的源文件。每次重复我们称之为一轮（Round）。
+
+    也就是说，第一轮解析、处理的是输入至编译器中的已有源文件。如果注解处理器生成了新的源文件，则开始第二轮、第三轮，解析并且处理这些新生成的源文件。当注解处理器不再生成新的源文件，编译进入最后一轮，并最终进入生成字节码的第 3 步。
+
+    所有的注解处理器类都需要实现接口Processor。该接口主要有四个重要方法。其中，init方法用来存放注解处理器的初始化代码。之所以不用构造器，是因为在 Java 编译器中，注解处理器的实例是通过反射 API 生成的。也正是因为使用反射 API，每个注解处理器类都需要定义一个无参数构造器。
+
+    通常来说，当编写注解处理器时，我们不声明任何构造器，并依赖于 Java 编译器，为之插入一个无参数构造器。而具体的初始化代码，则放入init方法之中。
+
+    在剩下的三个方法中，getSupportedAnnotationTypes方法将返回注解处理器所支持的注解类型，这些注解类型只需用字符串形式表示即可。
+
+    getSupportedSourceVersion方法将返回该处理器所支持的 Java 版本，通常，这个版本需要与你的 Java 编译器版本保持一致；而process方法则是最为关键的注解处理方法。
+
+    JDK 提供了一个实现Processor接口的抽象类AbstractProcessor。该抽象类实现了init、getSupportedAnnotationTypes和getSupportedSourceVersion方法。
+
+    它的子类可以通过@SupportedAnnotationTypes和@SupportedSourceVersion注解来声明所支持的注解类型以及 Java 版本。
+
+    如：
+    @SupportedAnnotationTypes("foo.CheckGetter")
+    @SupportedSourceVersion(SourceVersion.RELEASE_10)
+    public class CheckGetterProcessor extends AbstractProcessor {
+
+      @Override
+      public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
+        // TODO: annotated ElementKind.FIELD
+        for (TypeElement annotatedClass : ElementFilter.typesIn(roundEnv.getElementsAnnotatedWith(CheckGetter.class))) {
+          for (VariableElement field : ElementFilter.fieldsIn(annotatedClass.getEnclosedElements())) {
+            if (!containsGetter(annotatedClass, field.getSimpleName().toString())) {
+              processingEnv.getMessager().printMessage(Kind.ERROR,
+                  String.format("getter not found for '%s.%s'.", annotatedClass.getSimpleName(), field.getSimpleName()));
+            }
+          }
+        }
+        return true;
+      }
+
+      private static boolean containsGetter(TypeElement typeElement, String name) {
+        String getter = "get" + name.substring(0, 1).toUpperCase() + name.substring(1).toLowerCase();
+        for (ExecutableElement executableElement : ElementFilter.methodsIn(typeElement.getEnclosedElements())) {
+          if (!executableElement.getModifiers().contains(Modifier.STATIC)
+              && executableElement.getSimpleName().toString().equals(getter)
+              && executableElement.getParameters().isEmpty()) {
+            return true;
+          }
+        }
+        return false;
+      }
+    }
+
+
+    总结与实践
+    今天我介绍了 Java 编译器的注解处理器。
+
+    注解处理器主要有三个用途。一是定义编译规则，并检查被编译的源文件。二是修改已有源代码。三是生成新的源代码。其中，第二种涉及了 Java 编译器的内部 API，因此并不推荐。第三种较为常见，是 OpenJDK 工具 jcstress，以及 JMH 生成测试代码的方式。
+
+    Java 源代码的编译过程可分为三个步骤，分别为解析源文件生成抽象语法树，调用已注册的注解处理器，和生成字节码。如果在第 2 步中，注解处理器生成了新的源代码，那么 Java 编译器将重复第 1、2 步，直至不再生成新的源代码。
