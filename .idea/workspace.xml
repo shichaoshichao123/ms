@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyProfiler.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,7 +61,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="566">
@@ -69,11 +70,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JvmParamsDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/JvmParamsDemo.java">
+      <file leaf-file-name="MyProfiler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyProfiler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-134">
-              <caret line="8" column="6" lean-forward="true" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            <state relative-caret-position="451">
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyAgent.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,15 +102,6 @@
       <file leaf-file-name="字节码常用指令表.jpg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/字节码常用指令表.jpg">
           <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/gc/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1917">
-              <caret line="25" column="49" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="49" />
-            </state>
-          </provider>
         </entry>
       </file>
     </leaf>
@@ -125,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SpinDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SpinLockDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/ReadWriteLockDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/CountyEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SingletonDemo.java" />
@@ -176,6 +181,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/sctp/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/java字节码.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyProfiler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyAgent.java" />
       </list>
     </option>
   </component>
@@ -291,17 +298,6 @@
               <item name="ms" type="462c0819:PsiDirectoryNode" />
               <item name="juc" type="462c0819:PsiDirectoryNode" />
               <item name="jvm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="juc" type="462c0819:PsiDirectoryNode" />
-              <item name="jvm" type="462c0819:PsiDirectoryNode" />
-              <item name="JvmParamsDemo" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -513,12 +509,12 @@
       <workItem from="1558418051356" duration="1708000" />
       <workItem from="1558430809050" duration="8665000" />
       <workItem from="1559100204987" duration="1858000" />
-      <workItem from="1559281471551" duration="3286000" />
+      <workItem from="1559281471551" duration="3558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157833000" />
+    <option name="totallyTimeSpent" value="158105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -535,10 +531,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.24438903" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16583541" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.16583541" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3211731" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -567,20 +563,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
-          <caret line="126" column="43" selection-start-line="126" selection-start-column="43" selection-end-line="126" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/network/udp/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/network/https/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -913,6 +895,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="566">
           <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyProfiler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
