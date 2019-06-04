@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="" />
+    <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,8 +63,8 @@
       <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="306" column="45" selection-start-line="306" selection-start-column="39" selection-end-line="306" selection-end-column="45" />
+            <state relative-caret-position="566">
+              <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -511,15 +513,16 @@
       <workItem from="1558418051356" duration="1708000" />
       <workItem from="1558430809050" duration="8665000" />
       <workItem from="1559100204987" duration="1858000" />
-      <workItem from="1559281471551" duration="2859000" />
+      <workItem from="1559281471551" duration="3286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157406000" />
+    <option name="totallyTimeSpent" value="157833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -908,8 +911,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="306" column="45" selection-start-line="306" selection-start-column="39" selection-end-line="306" selection-end-column="45" />
+        <state relative-caret-position="566">
+          <caret line="341" column="80" selection-start-line="341" selection-start-column="80" selection-end-line="341" selection-end-column="80" />
         </state>
       </provider>
     </entry>
