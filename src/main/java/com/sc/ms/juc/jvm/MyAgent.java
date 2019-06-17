@@ -53,7 +53,6 @@ public class MyAgent {
             }
 
             ClassWriter cw = new ClassWriter(ClassWriter.COMPUTE_FRAMES | ClassWriter.COMPUTE_MAXS);
-            classNode.accept(cw);
             return cw.toByteArray();
         }
     }
