@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/orderBy.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/AIO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/BIO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/NIO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/channel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/fd.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/feature.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/hash.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/hashMap.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/message.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/selector.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/多路复用.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/base/对比.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/slave.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,20 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CountDownLatchDemo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/CountDownLatchDemo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="500">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -57,7 +61,7 @@
       <file leaf-file-name="SingletonDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SingletonDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-62">
+            <state relative-caret-position="627">
               <caret line="35" column="30" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="30" />
             </state>
           </provider>
@@ -66,8 +70,8 @@
       <file leaf-file-name="question.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2899">
-              <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
+            <state relative-caret-position="6099">
+              <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -75,7 +79,7 @@
       <file leaf-file-name="SpinLockDemo.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SpinLockDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
+            <state relative-caret-position="285">
               <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
             </state>
           </provider>
@@ -93,11 +97,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="readme.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="596">
-              <caret line="138" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="576">
+              <caret line="323" column="6" selection-start-line="323" selection-start-column="6" selection-end-line="323" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hashMap.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/base/hashMap.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -139,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SemaphoreDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/BlockingQueueDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/sctp/v1/PCDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/sctp/v1/PcDemo.java" />
@@ -187,9 +199,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm/MyAgent.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/ReenterLockDemo2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/Singleton.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/base/hashMap.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" />
       </list>
     </option>
   </component>
@@ -231,7 +244,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,7 +286,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="juc" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -281,7 +295,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ms" type="462c0819:PsiDirectoryNode" />
-              <item name="sql" type="462c0819:PsiDirectoryNode" />
+              <item name="juc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ms" type="b2602c69:ProjectViewProjectNode" />
@@ -358,8 +372,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -374,15 +387,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.sc.ms.netty.socket" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/base" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/sql" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/jvm" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/database" />
       <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/network/socket" />
-      <recent name="$PROJECT_DIR$/src/main/java/com/sc/ms/network/https" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.sc.ms.netty.socket" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -548,12 +561,13 @@
       <workItem from="1560148442776" duration="1489000" />
       <workItem from="1560407572181" duration="5448000" />
       <workItem from="1560580339590" duration="1010000" />
-      <workItem from="1560664046032" duration="6878000" />
+      <workItem from="1560664046032" duration="12623000" />
+      <workItem from="1561178429089" duration="2529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177180000" />
+    <option name="totallyTimeSpent" value="185454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -569,10 +583,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.27805486" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.159601" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2032419" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.35407725" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3590844" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -601,13 +615,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/network/socket/TcpServerWorker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/network/socket/TcpServer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -910,13 +917,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/Singleton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -926,15 +926,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SingletonDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-62">
+        <state relative-caret-position="627">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2899">
-          <caret line="123" column="4" selection-start-line="123" selection-start-column="4" selection-end-line="123" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -947,15 +940,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/SpinLockDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
+        <state relative-caret-position="285">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/sql/question.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6099">
+          <caret line="321" column="4" selection-start-line="321" selection-start-column="4" selection-end-line="321" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="138" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="576">
+          <caret line="323" column="6" selection-start-line="323" selection-start-column="6" selection-end-line="323" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/base/hashMap.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
