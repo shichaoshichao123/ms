@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/aqs/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/aqs/CyclicBarrierDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/aqs/FutureTaskDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/aqs/SemaphoreDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/juc/readme.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sc/ms/sql/readme.txt" afterDir="false" />
-    </list>
+    <list default="true" id="cb29493f-3228-4c55-9a8e-50c0d1ec43ca" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,7 +34,7 @@
       <file leaf-file-name="ReentrantReadWriteLock.java" pinned="false" current-in-tab="true">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
+            <state relative-caret-position="-9659">
               <caret line="910" column="49" selection-start-line="910" selection-start-column="45" selection-end-line="910" selection-end-column="49" />
             </state>
           </provider>
@@ -601,12 +593,12 @@
       <workItem from="1560664046032" duration="12623000" />
       <workItem from="1561178429089" duration="4499000" />
       <workItem from="1561683687923" duration="7891000" />
-      <workItem from="1562036505884" duration="10572000" />
+      <workItem from="1562036505884" duration="10759000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208290000" />
+    <option name="totallyTimeSpent" value="208477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1014,7 +1006,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
+        <state relative-caret-position="-9659">
           <caret line="910" column="49" selection-start-line="910" selection-start-column="45" selection-end-line="910" selection-end-column="49" />
         </state>
       </provider>
