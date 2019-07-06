@@ -42,7 +42,7 @@
       <file leaf-file-name="ReentrantReadWriteLock.java" pinned="false" current-in-tab="true">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
+            <state relative-caret-position="798">
               <caret line="910" column="49" selection-start-line="910" selection-start-column="45" selection-end-line="910" selection-end-column="49" />
             </state>
           </provider>
@@ -601,16 +601,15 @@
       <workItem from="1560664046032" duration="12623000" />
       <workItem from="1561178429089" duration="4499000" />
       <workItem from="1561683687923" duration="7891000" />
-      <workItem from="1562036505884" duration="10527000" />
+      <workItem from="1562036505884" duration="10572000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208245000" />
+    <option name="totallyTimeSpent" value="208290000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -622,12 +621,12 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" weight="0.3297568" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4426434" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4426434" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2032419" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2032419" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.36909872" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36909872" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1015,7 +1014,7 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/ReentrantReadWriteLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
+        <state relative-caret-position="798">
           <caret line="910" column="49" selection-start-line="910" selection-start-column="45" selection-end-line="910" selection-end-column="49" />
         </state>
       </provider>
