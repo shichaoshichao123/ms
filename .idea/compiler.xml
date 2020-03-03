@@ -9,6 +9,8 @@
         <module name="ms" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel>
+      <module name="ms" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
