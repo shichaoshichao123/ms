@@ -43,6 +43,21 @@ WebFlux应用
 
 
 
+二：走向自动装配
+
+   1：Spring框架的收订装配
+
+       Spring模式注解装配
+            定义：一种用于声明在应用中扮演的角色的注解
+            如：@Service @Component
+            装配方式：xml或@ComponentScan
+       @Enable模块装配：
+            用于将具有相同领域的功能组建集合，组合起来形成一个独立的单元，可以不用一个个的去配置
+            如：@EnableWebMvc ，@EnableAutoConfiguration 等
+            实现方式：注解方式，编程方式
+
+
+
 
 
 
