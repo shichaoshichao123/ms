@@ -125,6 +125,88 @@ WebFlux应用
         SpringBoot 应用事件/监听：
 
 
+四：SpringWebMvc的核心：
+
+    理解SpringWebMVC的架构 （前端控制器架构）
+        基础架构：Servlet
+            Servlet特点：
+                请求响应式
+                屏蔽了网络传输的细节
+            Servlet的职责：
+                响应请求
+                资源管理
+                视图渲染
+
+
+    认识SpringMVC
+        实现Controller
+        配置SpringMVC组建
+        部署DispatcherServlet
+
+        WebMVC核心组件
+            映射：HandlerMapping
+            适配：HandlerAdapter
+            执行：HandlerExecutionChain
+            视图解析：ViewResolver
+            国际化：LocaleResolver，LocaleContextResolver
+            个性化：ThemeResolver
+            异常处理：HandlerExceptionResolver
+
+        WebMVC注解驱动
+            注解配置：@Configuration（Spring范式注解）
+            组件激活：@EnableWebMvc（Spring模块装配）
+            自定义组件配置：WebMvcConfigurer（SpringBean）
+        WebMVC自动装配
+            使用前提：依赖于Servlet3.0+
+            ServletAPI:ServletContainerInitializer
+            Spring适配：SpringServletContainerInitializer
+            SpringSPI：WebApplicationInitializer
+    SpringBoot简化SpringMVC
+        完全自动装配
+            DispatchServlet：DispatchServletAutoConfiguration
+            替换@EnableWebMvc注解为：WebMvcAutoConfiguration
+        装配条件
+            Web类型：Servlet
+            API依赖：Servlet，Spring Web MVC
+            Bean依赖:WebMvcConfigurationSupport
+        外部化配置
+            WebMvc配置：WebMvcProperties
+            资源配置：ResourcesProperties
+
+
+    SpringMVC Rest:
+
+    REST简介：
+        架构约束：
+            统一接口
+            C/S架构
+            无状态：用户的状态主要维持在客户端而不是服务端
+            可缓存：
+            分层系统：
+            按代码所需：
+        三个基本方面：
+            资源识别：URI
+            资源操作：GET，PUT，POST。。。。
+            自描述消息：Content-type，MIME-type
+            超媒体：
+
+
+    WEBMVC对REST的支持：
+        注解驱动：
+            定义：@Controller，@RestController
+            映射：@RequestMapping @*RequestMapping
+            请求：@RequestParam，@RequestHeader，@CookieValue
+            响应：@ResponseBody，@ResponseEntity
+            拦截：@RestControllerAdvice
+            跨域：@CorssOrigin
+    REST的内容协商：
+        核心组件：
+           处理方法参数的解析器：HandlerMethodArgumentResolver（用于请求参数内容的解析）
+           处理方法返回的解析器：HandlerMethodReturnValueHandler（用于方法返回内容的处理）
+
+    CORS：
+
+
 
 
 
