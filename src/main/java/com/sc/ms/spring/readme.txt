@@ -1,9 +1,14 @@
+
 1:Spring Bean的作用域
     1：Singleton 单例，整个容器中只有一个实例对象
     2：prototype 该作用域，会针对每个getBean方法都会生成一个新的实例
     3：request 针对每个http请求生成一个新的实例
     4：session 为每个Session创建一个单独的bean实例
     5：globalSession 为每个全局的http Session（portlet环境下生效）创建相关bean实例
+向Spring容器中注入对象的方式：
+    1：@Configuration注解
+    2：@Import/importSelector接口/importBeanDefinitionRegister接口
+    3：BeanFactory接口
 
 2：Spring Bean的生命周期：
 
@@ -20,3 +25,4 @@
     cgLib（是一个动态生成代码的类库框架（ASM），以继承目标代理类的方式来实现动态代理，所以被标记成final的类是不能通过cglib实现动态代理的）
 
     2：由于Spring的AOP是基于getBean方法的，所以被代理的类必须被Spring IOC管理，不然就无能为力了。
+
