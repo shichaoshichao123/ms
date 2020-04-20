@@ -7,8 +7,18 @@
     5：globalSession 为每个全局的http Session（portlet环境下生效）创建相关bean实例
 向Spring容器中注入对象的方式：
     1：@Configuration注解
-    2：@Import/importSelector接口/importBeanDefinitionRegister接口
+    2：@Import/importSelector接口/importBeanDefinitionRegistrar接口
     3：BeanFactory接口
+
+Spring的扩展方式
+    设置初始化和销毁逻辑
+    1：@Bean：init-method和destroy-method
+    2：通过实现Bean的InitializingBean进行初始化逻辑扩展或DisposableBean进行销毁逻辑扩展
+    3：使用@PostConstrcut 和 @PreDestroy 注解
+
+    4：实现BeanPostProcessor接口并实现（用于自定义初始化前后的逻辑）
+        postProcessorBeforeInitialization（在实例对象已经创建，在实例的任何初始化逻辑调用之前工作）
+    和   postProcessorAfterInitialization（在实例对象已经创建，在实例的所有初始化逻辑调用之后工作）方法
 
 2：Spring Bean的生命周期：
 
